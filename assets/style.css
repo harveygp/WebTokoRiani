@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+* {
+  box-sizing: border-box;
+  /* overflow: auto; */
+}
+body {
+  /* background-color: conic-gradient(
+    hsl(198 50% 50%),
+    hsl(345 50% 50%),
+    hsl(67 50% 50%)
+  ); */
+  padding: 0;
+  margin: 0;
+  font-family: "inconsolata", sans-serif;
+}
+
+header {
+  display: inline;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  /* margin-bottom: 30px; */
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 50px;
+}
+
+a:hover {
+  color: black;
+}
+
+main h1 {
+  background-color: #ffb5c8;
+  width: 100%;
+  text-align: center;
+  border-radius: 200px;
+  font-weight: bolder;
+  box-shadow: 0 5px 8px 5px #f2f085;
+}
+
+article h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: none;
+}
+
+.styleHeader {
+  position: relative;
+  width: 510px;
+  margin: 0 auto;
+  background-color: #30e9f0;
+  text-align: center;
+  color: #fa4b85;
+  padding: 20px;
+  font-size: 25px;
+  border-radius: 300px;
+  border-width: 15px;
+  border-color: #f2f085;
+  border-style: solid;
+}
+
+.imgLogo {
+  position: absolute;
+  right: 328px;
+  bottom: 6px;
+  height: 150px;
+  border-radius: 300px;
+  border-color: #ffb5c8;
+  border-width: 10px;
+  border-style: solid;
+}
+
+section img {
+  height: 300px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #f2f085;
+  border-width: 10px;
+}
+
+nav {
+  background-color: #f50253;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  border-radius: 300px;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  box-shadow: 0 5px 8px 5px #ffb5c8;
+  margin-top: 20px;
+  border-radius: 300px;
+  position: relative;
+}
+
+.card section {
+  box-shadow: 0 5px 8px 5px #ffb5c8;
+  margin-top: 20px;
+  border-radius: 50px;
+  background-color: white;
+  padding: 20px;
+  width: 800px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-width: 10px;
+  border-color: #f2f085;
+  border-style: solid;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 5px 8px 5px #ffb5c8;
+}
+
+/* .container span {
+    width: 10%;
+    text-align: center;
+    margin: 0;
+} */
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.container3 {
+  column-width: 250px;
+  column-gap: 20px;
+}
+
+.cardContainer {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  background-color: wheat;
+  border: 3px #f2f085;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 0 0 1em 0;
+}
+
+.buttonPlus1,
+.buttonPlus2,
+.buttonPlus3,
+.buttonMin1,
+.buttonMin2,
+.buttonMin3 {
+  flex-basis: 25%;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 25px;
+  border-color: black;
+  border-style: solid;
+  background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+.box {
+  flex-grow: 1;
+  margin: 5px;
+  border: 10px #f2f085;
+  border-radius: 10px;
+}
+
+aside header img {
+  width: 50%;
+  border-radius: 25px;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  margin-left: 25%;
+}
+
+aside header p {
+  width: 50%;
+  text-align: center;
+  background-color: #ffb5c8;
+  border-radius: 25px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: aqua;
+  margin-left: 25%;
+}
+
+table {
+  margin-left: 15%;
+  margin-top: 15px;
+}
+
+.tableColor1 {
+  text-align: left;
+  background-color: #ffb5c8;
+  border-radius: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #f2f085;
+}
+
+footer {
+  padding: 40px;
+  color: white;
+  background-color: #ffb5c8;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  nav a {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 25px;
+  }
+
+  .styleHeader {
+    width: 400px;
+    text-align: left;
+  }
+
+  /* .container span{
+      width: 25%;
+  } */
+  header img {
+    height: 150px;
+    bottom: 7px;
+    left: 210px;
+  }
+
+  table {
+    margin-left: 10%;
+  }
+
+  /* aside header img{
+      height: 300px;
+  } */
+}
