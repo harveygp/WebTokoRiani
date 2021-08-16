@@ -25,8 +25,10 @@ if (typeof Storage !== "undefined") {
   buttonMin1.addEventListener("click", function (event) {
     let number1 = localStorage.getItem(dataKey1);
     number1--;
-    localStorage.setItem(dataKey1, number1);
-    count1.innerText = localStorage.getItem(dataKey1);
+    if(number1 >= 0){
+      localStorage.setItem(dataKey1, number1);
+      count1.innerText = localStorage.getItem(dataKey1);
+    }
   });
 } else {
   alert("browser engga bisa");
@@ -55,8 +57,10 @@ if (typeof Storage !== "undefined") {
   buttonMin2.addEventListener("click", function (event) {
     let number2 = localStorage.getItem(dataKey2);
     number2--;
-    localStorage.setItem(dataKey2, number2);
-    count2.innerText = localStorage.getItem(dataKey2);
+    if(number2 >= 0){
+      localStorage.setItem(dataKey2, number2);
+      count2.innerText = localStorage.getItem(dataKey2);
+    }
   });
 } else {
   alert("browser engga bisa");
@@ -85,8 +89,10 @@ if (typeof Storage !== "undefined") {
   buttonMin3.addEventListener("click", function (event) {
     let number3 = localStorage.getItem(dataKey3);
     number3--;
-    localStorage.setItem(dataKey3, number3);
-    count3.innerText = localStorage.getItem(dataKey3);
+    if(number3 >= 0){
+      localStorage.setItem(dataKey3, number3);
+      count3.innerText = localStorage.getItem(dataKey3);
+    }
   });
 } else {
   alert("browser engga bisa");
